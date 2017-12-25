@@ -11,4 +11,9 @@ class ArticleController extends Controller
 		$articles = Article::orderBy('id', 'desc')->paginate(15);
 		return view('article.list')->with(compact('articles'));
 	}
+
+	public function show($id)
+	{
+		return view('article.post');
+	}
 }
