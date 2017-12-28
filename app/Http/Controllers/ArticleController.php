@@ -14,6 +14,7 @@ class ArticleController extends Controller
 
 	public function show($id)
 	{
-		return view('article.post');
+		$article = Article::find($id);
+		return view('article.post')->with(compact('article'));
 	}
 }

@@ -32,7 +32,7 @@
                                 <div class="post-item-description">
                                     <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{$v->created_at}}</span>
                                     <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                    <h2><a href="#">{{$v->title}}</a></h2>
+                                    <h2><a href="{{ route('article.show', [$v->id]) }}">{{$v->title}}</a></h2>
                                     <p>{{$v->content}}</p>
 
                                     <a href="article.html" class="item-link">Read More <i class="fa fa-arrow-right"></i></a>
